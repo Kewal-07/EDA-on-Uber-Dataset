@@ -1,13 +1,13 @@
 # NCR Ride Bookings – Exploratory Data Analysis
 
 This project contains an **EDA (Exploratory Data Analysis)** of ride booking data.  
-The analysis was performed in the Jupyter Notebook: `actionable-insights-via-eda-clustering-uber-data.ipynb`.
+The analysis was performed in the Jupyter Notebook: `eda.ipynb`.
 
 ---
 
 ## 📂 Files in this Repo
 - **ncr_ride_bookings.csv** → Raw dataset of bookings.
-- **actionable-insights-via-eda-clustering-uber-data.ipynb** → Notebook with step-by-step EDA.
+- **eda.ipynb** → Notebook with step-by-step EDA.
 
 ---
 
@@ -43,11 +43,3 @@ The analysis was performed in the Jupyter Notebook: `actionable-insights-via-eda
    - Booking value distribution.  
    - Ratings (driver vs customer).  
 
----
-
-## 📊 Example Insight – Booking Distribution by Days
-The notebook groups bookings by date and weekday, then calculates the **average number of bookings per weekday**:
-
-```python
-booking_perDay = df.groupby(['Date','Day']).size().reset_index(name='count')
-mean_bookingperDay = booking_perDay.groupby('Day')['count'].mean().reset_index()
