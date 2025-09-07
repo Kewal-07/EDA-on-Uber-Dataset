@@ -38,7 +38,7 @@ The analysis was performed in the Jupyter Notebook: `eda.ipynb`.
    - Bookings by hour of day.  
    - Bookings by month/season.  
 
-7. **Other Plots**  
+7. **Other Plots(can be done)**  
    - Ride distance distribution.  
    - Booking value distribution.  
    - Ratings (driver vs customer).  
